@@ -1,0 +1,20 @@
+empo=int(input('enter value:'))
+empname=input('enter name:')
+empdesig=input('enter desig:')
+bs=int(input('enter bs:'))
+da=int(input('enter da:'))
+ta=int(input('enter ta:'))
+hra=int(input('enter hra:'))
+ns=bs+da+ta+hra
+if ns>100000:
+    tax=(ns*10)/100
+elif ns>50000:
+    tax=(ns*7)/100
+elif ns>40000:
+    tax=(ns*4)/100
+elif ns>20000:
+    tax=(ns*2)/100
+elif ns<20000:
+    tax=0
+print('tax is:',tax)
+
